@@ -23,3 +23,8 @@
         targetDeployReleaseRepo: 'spring_petclinic-libs-release'
         targetDeploySnapshotRepo: 'spring_petclinic-libs-snapshot'
         javaHomeOption: 'JDKVersion'
+    - task: JFrogPublishBuildInfo@1
+      inputs:
+        artifactoryConnection: 'JFROG_CLOUD'
+        buildName: '$(Build.DefinitionName)'
+        buildNumber: '$(Build.BuildNumber)'
