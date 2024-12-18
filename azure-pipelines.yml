@@ -12,14 +12,14 @@
     - main
     
   steps:
-   - task: JFrogMaven@1
-     inputs:
-      mavenPomFile: 'pom.xml'
-      goals: 'install'
-      artifactoryResolverService: 'JFROG_CLOUD'
-      targetResolveReleaseRepo: 'jfrog-practice-libs-release'
-      targetResolveSnapshotRepo: 'jfrog-practice-libs-snapshot'
-      artifactoryDeployService: 'JFROG_CLOUD'
-      targetDeployReleaseRepo: 'jfrog-practice-libs-release'
-      targetDeploySnapshotRepo: 'jfrog-practice-libs-snapshot'
-      javaHomeOption: 'JDKVersion'
+    - task: JFrogMaven@1
+      inputs:
+        mavenPomFile: 'pom.xml'
+        goals: 'install'
+        artifactoryResolverService: 'JFROG_CLOUD'
+        targetResolveReleaseRepo: 'spring_petclinic-libs-release'
+        targetResolveSnapshotRepo: 'spring_petclinic-libs-snapshot'
+        artifactoryDeployService: 'JFROG_CLOUD'
+        targetDeployReleaseRepo: 'spring_petclinic-libs-release'
+        targetDeploySnapshotRepo: 'spring_petclinic-libs-snapshot'
+        javaHomeOption: 'JDKVersion'
