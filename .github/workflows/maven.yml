@@ -25,7 +25,7 @@ jobs:
       uses: actions/setup-java@v4
       with:
         java-version: '17'
-        distribution: correcto
+        distribution: corretto
     - name: maven build
       run: mvn package
       
@@ -40,8 +40,8 @@ jobs:
       uses: actions/setup-java@v4
       with:
         java-version: '21'
-        distribution: correcto
+        distribution: corretto
     - name: maven build
-      run: mvn package    
+      run: mvn package
 
  
